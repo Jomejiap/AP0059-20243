@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Estación meteorológica</title>
+</head>
+<body>
+    <h1>Estación meteorológica</h1>
+    
+    <div class="bd">
+        <div class="container" id="div1">
+            <h2>Húmedad en el medio ambiente</h2>
+            <iframe class="grafico" src="https://thingspeak.com/channels/2838382/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+            <p> "El valor de humedad en la gráfica está medido en porcentaje %" </p>
+        </div>
+        <div class="container" id="div2">
+            <h2>Temperatura</h2>
+            <iframe class="grafico" src="https://thingspeak.com/channels/2838382/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+            <p> "La temperatura ambiente está siendo medida en °C" </p>
+        </div>
+        <div class="container" id="div3">
+            <h2>Concentración de CO2 en el ambiente</h2>
+            <iframe class="grafico" src="https://thingspeak.com/channels/2838382/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+            <p> "La concentración de CO2 está siendo medida en partes por millón" </p>
+            <p style="font-weight: bolder;">SI ES MAYOR A 400 COMIENZA A SER PELIGROSO</p>
+        </div>
+        <div class="container" id="div4">
+            <h2>Luz en el ambiente</h2>
+            <iframe class="grafico" src="https://thingspeak.com/channels/2838382/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+            <P>"Cuánto menor sea el número mayor es la cantidad de luz"</P>
+        </div>
+        <div class="container" id="div5">
+            <h2>LLuvia</h2>
+            <iframe class="grafico" src="https://thingspeak.com/channels/2838382/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+            <p>"Si el número está más cerca de 0 que de 4000 no hay presencia de lluvia"</p>
+        </div>
+    </div>
+        <!-- Footer -->
+    <footer>
+        <p>&copy; derechos reservados.</p>
+        <a href="https://github.com/Jomejiap/AP0059-20243/tree/main/Proyecto%20final" target="_blank">
+            <i class="fab fa-github"></i> Click para ir al repositorio del proyecto
+        </a>
+    </footer>
+    <script src="script/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <script src="script/main.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
