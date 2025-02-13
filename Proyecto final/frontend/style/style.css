@@ -1,0 +1,70 @@
+body {
+    background-image: url("/img/fondo.jpg");
+    background-size: cover;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 0;
+
+}
+.bd{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.container{
+    padding: 1em;
+    width: 30%;
+    height: 30%;
+    position:relative;
+}
+.container:hover{
+    box-shadow: inset -2px -2px 4px 0px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease;
+
+}
+
+.grafico{
+    width: 450px;
+    height: 250px;
+    border: solid 3px blue;
+    box-shadow: 1px 2px 1px black;
+    transition: box-shadow 0.3s ease;
+}
+.grafico:hover{
+    text-align: center;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.3);
+    width: 480px;
+    height: 280px;
+}
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: absolute;
+    margin-top: 15px;
+    margin-bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer a {
+    color: #1da1f2;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+footer a i {
+    margin-right: 8px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
